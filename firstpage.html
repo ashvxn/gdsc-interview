@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<meta name="viewport" content="initial-scale=1.0, width=device-width">
+<html>
+<head>
+  <title>POKEFUN</title>
+  <style>
+    *{
+        padding: 0px;
+        margin : 0px;
+
+    }
+    html{
+        width :100vw;
+    }
+    body {
+    
+      font-family: Arial, sans-serif;
+      /* background-image: url('IMG-20231015-WA0016.jpg'); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      flex-direction: column;
+      width :100vw;
+      background-color: #ff5722;
+      position: absolute;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      background-color: #EF9A9A;
+      color: #fff;
+      padding: 5px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      position: fixed;
+      width: 100vw;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .card {
+      position: relative;
+      width: 400px;
+      height: 350px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .dropdown {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: none;
+    }
+
+    .card:hover .dropdown {
+      display: block;
+    }
+
+    .explore-button {
+      width: 100%;
+      background-color: #ffd54F;
+      color: #fff;
+      border: none;
+      border-radius: 0;
+      padding: 8px 0;
+      cursor: pointer;
+      border-radius: 22px;
+    }
+
+    .explore-button:hover {
+      background-color: #ff5722;
+      border-radius: 22px;
+    }
+    .top_portion{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("IMG-20231015-WA0016.jpg");
+        background-size: cover;
+        background-position: center;
+        
+        background-color: rgb(0, 0, 0);
+        
+        
+    }
+    .title{
+        height: 40%;
+        width:60%;
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+
+        
+    }
+    .title h1{
+        font-size: 70px;
+        color: #fff;
+
+
+    }
+    .title p{
+        width: 40%;
+        color: white;
+
+    }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: black;
+        opacity: 0.6;
+    }
+    .about_us{
+        padding: 60px;
+        width: 80%;
+
+    }
+    .about_us h1{
+        text-align: center;
+
+    }
+    .about_us p{
+        font-size: 22px;
+
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>POKE-FUN</h1>
+  </header>
+
+<div class = "top_portion">
+    <div class ="overlay" ></div>
+    <div class = "title">
+        <h1>POKEFUN</h1>
+        <p>pokemon is super,pikachu is amazing,ash is super amazing Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni, vitae hic optio doloremque reicien</p>
+
+
+    </div>
+</div>
+<div class = "about_us">
+    <h1>About Us</h1>
+    <p >Pokémon, short for "Pocket Monsters," is a popular media franchise created by Satoshi Tajiri and Ken Sugimori, which is managed by The Pokémon Company, a collaboration between Nintendo, Game Freak, and Creatures Inc. The franchise was first introduced by Nintendo in 1996 and has since become one of the most successful and recognizable franchises in the world. Here are some key aspects of Pokémon:</p>
+    p
+</div>
+<div>
+    <h1>COMPETITIONS</h1>
+</div>
+  <div class="container">
+
+
+    <div class="card">
+      <img src="image0_0.jpg" alt="Pikachu Car">
+      <div class="card-content">
+        <h2>Pikachu Drawing</h2>
+        <p>Drive in style with Pikachu!</p>
+      </div>
+      <div class="dropdown">
+        <button class="explore-button">Explore</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="make me a pokem 0.png" alt="Charizard Car">
+      <div class="card-content">
+        <h2>Pikachu cosplay</h2>
+        <p>Cosplay</p>
+      </div>
+      <div class="dropdown">
+        <button class="explore-button">Explore</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="quiz.jpg" alt="Squirtle Car">
+      <div class="card-content">
+        <h2>Pikachu Quiz</h2>
+        <p>gdsc quiz</p>
+      </div>
+      <div class="dropdown">
+        <button class="explore-button">Explore</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
